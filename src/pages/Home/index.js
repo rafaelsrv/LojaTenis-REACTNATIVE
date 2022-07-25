@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet,ScrollView, Image, TouchableOpacity } from 'react-native';
 import {MaterialIcons} from '@expo/vector-icons'
-import Shoes from '../../component/shoes';
+import Shoes from '../../component/Shoes';
 import { useNavigation } from '@react-navigation/native';
 
 export default function Home() {
@@ -32,7 +32,7 @@ export default function Home() {
     </View>
     <View style={styles.line}/>
 
-    <ScrollView>
+    <ScrollView >
       <Text style={styles.text}>LANÇAMENTOS</Text>
       <View style={{ flexDirection:'row', justifyContent:'space-around'}}>
         <Shoes img={require('../../assets/1.png')} cost="R$140,90" onClick={()=> navigation.navigate('Detail')}>
